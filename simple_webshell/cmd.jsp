@@ -32,7 +32,7 @@
         }
 
         if(os.indexOf("win") == -1) {
-            // Windows가 아닐 경ㅇ
+            // Windows가 아닐 경우
             shell = "/bin/sh -c ";
         } else {
             shell = "cmd.exe /c ";
